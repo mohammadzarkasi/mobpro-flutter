@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pbm2025/gps_screen.dart';
+import 'package:pbm2025/map_screen.dart';
 
 class GpsAndMapScreen extends StatelessWidget {
   const GpsAndMapScreen({super.key});
@@ -21,6 +22,18 @@ class GpsAndMapScreen extends StatelessWidget {
               );
             },
             child: Text("GPS"),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) {
+                    return MapScreen();
+                  },
+                ),
+              );
+            },
+            child: Text("Peta"),
           ),
         ],
       ),
