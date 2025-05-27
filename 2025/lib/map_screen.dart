@@ -26,32 +26,32 @@ class MapScreen extends StatelessWidget {
                       'com.example.app', // Add your app identifier
                   // And many more recommended properties!
                 ),
-                // MarkerLayer(
-                //   markers: [
-                //     Marker(
-                //       point: LatLng(-8.13, 113.729),
-                //       child: Container(
-                //         decoration: BoxDecoration(
-                //           color: Colors.red,
-                //           borderRadius: BorderRadius.circular(30),
-                //         ),
-                //       ),
-                //     ),
-                //   ],
-                // ),
-                RichAttributionWidget(
-                  // Include a stylish prebuilt attribution widget that meets all requirments
-                  attributions: [
-                    TextSourceAttribution(
-                      'OpenStreetMap contributors',
-                      onTap: () {},
-                      // onTap: () => launchUrl(
-                      //   Uri.parse('https://openstreetmap.org/copyright'),
-                      // ), // (external)
+                MarkerLayer(
+                  markers: [
+                    Marker(
+                      point: LatLng(-8.13, 113.729),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                      ),
                     ),
-                    // Also add images...
                   ],
                 ),
+                // RichAttributionWidget(
+                //   // Include a stylish prebuilt attribution widget that meets all requirments
+                //   attributions: [
+                //     TextSourceAttribution(
+                //       'OpenStreetMap contributors',
+                //       onTap: () {},
+                //       // onTap: () => launchUrl(
+                //       //   Uri.parse('https://openstreetmap.org/copyright'),
+                //       // ), // (external)
+                //     ),
+                //     // Also add images...
+                //   ],
+                // ),
               ],
             ),
           ),

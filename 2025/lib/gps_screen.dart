@@ -40,6 +40,7 @@ class _GpsScreenState extends State<GpsScreen> {
     var position = await Geolocator.getCurrentPosition(
       locationSettings: LocationSettings(accuracy: LocationAccuracy.high),
     );
+    // Geolocator.
 
     setState(() {
       label =
