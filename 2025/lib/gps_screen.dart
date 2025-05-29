@@ -52,16 +52,18 @@ class _GpsScreenState extends State<GpsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("Membaca Koordinat GPS")),
-      body: Column(
-        children: [
-          Text(label),
-          ElevatedButton(
-            onPressed: () {
-              _bacaLokasi();
-            },
-            child: Text('baca lokasi saat ini'),
-          ),
-        ],
+      body: Center(
+        child: Column(
+          children: [
+            Text(label),
+            ElevatedButton(
+              onPressed: () {
+                _bacaLokasi();
+              },
+              child: Text('baca lokasi saat ini'),
+            ),
+          ],
+        ),
       ),
     );
   }

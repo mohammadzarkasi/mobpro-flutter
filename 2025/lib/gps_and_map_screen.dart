@@ -9,33 +9,35 @@ class GpsAndMapScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("GPS dan Peta")),
-      body: Column(
-        children: [
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (_) {
-                    return GpsScreen();
-                  },
-                ),
-              );
-            },
-            child: Text("GPS"),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (_) {
-                    return MapScreen();
-                  },
-                ),
-              );
-            },
-            child: Text("Peta"),
-          ),
-        ],
+      body: Center(
+        child: Column(
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) {
+                      return GpsScreen();
+                    },
+                  ),
+                );
+              },
+              child: Text("GPS"),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) {
+                      return MapScreen();
+                    },
+                  ),
+                );
+              },
+              child: Text("Peta"),
+            ),
+          ],
+        ),
       ),
     );
   }
