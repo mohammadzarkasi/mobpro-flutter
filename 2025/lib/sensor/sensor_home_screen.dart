@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pbm2025/sensor/sensor_accelerometer_screen.dart';
+import 'package:pbm2025/sensor/sensor_gyroscope_screen.dart';
 
 class SensorHomeScreen extends StatelessWidget {
   const SensorHomeScreen({super.key});
@@ -12,15 +13,30 @@ class SensorHomeScreen extends StatelessWidget {
         child: Column(
           children: [
             // const Text("Accelerometer"),
-            ElevatedButton(onPressed: (){
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (_) {
-                    return const SensorAccelerometerScreen();
-                  },
-                ),
-              );
-            }, child: Text('Accelerometer')),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) {
+                      return const SensorAccelerometerScreen();
+                    },
+                  ),
+                );
+              },
+              child: Text('Accelerometer'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (_) {
+                      return SensorGyroscopeScreen();
+                    },
+                  ),
+                );
+              },
+              child: Text('Gyroscope'),
+            ),
           ],
         ),
       ),
