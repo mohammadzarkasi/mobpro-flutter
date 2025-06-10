@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pbm2025/camera_screen.dart';
 import 'package:pbm2025/gps_and_map_screen.dart';
+import 'package:pbm2025/sensor/sensor_home_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -33,6 +34,15 @@ class HomeScreen extends StatelessWidget {
                 ),
               );
             }, child: Text("Kamera")),
+            ElevatedButton(onPressed: (){
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) {
+                    return const SensorHomeScreen();
+                  },
+                ),
+              );
+            }, child: Text('Sensor')),
           ],
         ),
       ),
