@@ -59,7 +59,7 @@ class _SensorGyroscopeScreenState extends State<SensorGyroscopeScreen> {
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               child: Text(
-                'Gerakkan perangkat Anda untuk melihat perubahan nilai. '
+                'Gerakkan perangkat untuk melihat perubahan nilai. '
                 'Nilai positif menunjukkan rotasi berlawanan arah jarum jam '
                 'di sekitar sumbu terkait dari perspektif perangkat.',
                 textAlign: TextAlign.center,

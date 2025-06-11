@@ -54,11 +54,6 @@ class _SensorAccelerometerScreenState extends State<SensorAccelerometerScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Text(
-            //   _isListening
-            //       ? "Membaca sensor accelerometer..."
-            //       : "Tekan tombol untuk mulai membaca sensor",
-            // ),
             Text("X: $_accX"),
             Text("Y: $_accY"),
             Text("Z: $_accZ"),
